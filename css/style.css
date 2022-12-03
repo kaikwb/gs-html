@@ -319,6 +319,10 @@ input::placeholder {
     background-color: rgba(229, 229, 229, 0.7);
     max-width: clamp(0px, 80vw, 900px);
     border-radius: 15px;
+    padding: 30px;
+}
+
+.page-container > p {
     font-family: Inter, serif;
     font-style: normal;
     font-weight: 400;
@@ -326,5 +330,63 @@ input::placeholder {
     line-height: 48px;
     text-align: justify;
     text-indent: 100px;
-    padding: 30px;
+}
+
+.page-container > form {
+    /*position: relative;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*background-color: red;*/
+}
+
+.form-label {
+    display: inline-block;
+    width: 150px;
+    height: 60px;
+    max-width: 150px;
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: right;
+}
+
+.form-input {
+    height: 60px;
+    width: 100%;
+    max-width: clamp(0px, 50vw, 600px);;
+    border: black 1px solid;
+    border-radius: 15px;
+    margin-bottom: 35px;
+}
+
+.form-input-extended {
+    height: 200px;
+    width: 100%;
+    max-width: clamp(0px, 50vw, 600px);
+    border: black 1px solid;
+    border-radius: 15px;
+    margin-bottom: 35px;
+}
+
+.form-submit-button {
+    height: 50px;
+    width: 100px;
+    color: white;
+    background-color: blue;
+    border: black 1px solid;
+    border-radius: 15px;
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.page-container > span {
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
 }

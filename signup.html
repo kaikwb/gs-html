@@ -28,28 +28,23 @@
 <article>
     <div class="content">
         <img class="page-background" src="images/transportation.jpg" alt="Transportation">
-        <p class="page-title">Quem Somos</p>
+        <p class="page-title">Cadastro</p>
         <div class="page-container">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum viverra quam ac dignissim.
-                Morbi euismod ipsum sed nunc tincidunt dictum. Mauris vitae urna eu leo mattis feugiat condimentum nec
-                nisi. Fusce pulvinar ante eu ex sagittis, in laoreet velit dapibus. Morbi egestas, erat vitae rhoncus
-                volutpat, tellus metus tempor sem, ut cursus nulla est eget diam. Etiam in diam magna. In laoreet mattis
-                erat non condimentum. Duis at massa ipsum. Ut sit amet mollis quam, et sagittis orci.</p>
-            <p>Fusce vel dapibus lectus. Morbi vitae tortor id risus ultrices tincidunt et ac magna. Fusce aliquet
-                accumsan commodo. Nullam risus velit, tincidunt non tellus tincidunt, mollis hendrerit orci. Sed
-                hendrerit, lectus eget rutrum pretium, lorem diam dictum turpis, vitae malesuada eros ipsum pellentesque
-                augue. Ut dolor nisi, imperdiet sed faucibus in, congue quis nisi. Nulla facilisi. Curabitur aliquet
-                augue ut facilisis mattis.</p>
-            <p>Mauris ut sollicitudin urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Aenean vel nulla massa. Quisque dapibus metus pulvinar, hendrerit elit a, congue leo.
-                Nulla facilisi. Proin egestas, odio ut porta bibendum, felis elit accumsan dolor, vel tempor nunc purus
-                vitae ante. Sed velit lectus, ornare in tincidunt in, bibendum sed libero. Quisque dictum congue elit,
-                elementum varius turpis semper molestie. In quam odio, mattis quis pellentesque id, laoreet eu nulla.
-                Etiam pharetra urna in est hendrerit semper. Nulla facilisi. Nullam id erat eget lectus volutpat
-                molestie vitae a nisl. Sed convallis ornare arcu, vel luctus risus pellentesque vitae. Curabitur et quam
-                eget neque pulvinar scelerisque vel id tellus. Ut nec diam ullamcorper, hendrerit nulla ut, tincidunt
-                nisl.</p>
-            </p>
+            <form name="signup" action="" onsubmit="return validateSignup()" method="post">
+                <label class="form-label" for="singup-uname">Nome:</label>
+                <input class="form-input" type="text" id="singup-uname" name="singup-uname"><br>
+                <label class="form-label" for="singup-mail">Email:</label>
+                <input class="form-input" type="text" id="singup-mail" name="singup-mail"><br>
+                <label class="form-label" for="singup-cpf">CPF:</label>
+                <input class="form-input" type="text" id="singup-cpf" name="signup-cpf"><br>
+                <label class="form-label" for="signup-telephone">Telefone</label>
+                <input class="form-input" type="text" id="signup-telephone" name="signup-telephone"><br>
+                <label class="form-label" for="signup-pass">Senha:</label>
+                <input class="form-input" type="password" id="signup-pass" name="signup-pass"><br>
+                <label class="form-label" for="signup-cpass">Confirme a senha:</label>
+                <input class="form-input" type="password" id="signup-cpass" name="signup-cpass"><br>
+                <input class="form-submit-button" type="submit" value="Cadastrar">
+            </form>
         </div>
     </div>
 </article>
@@ -73,6 +68,6 @@
         </div>
     </div>
 </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>
